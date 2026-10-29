@@ -13,6 +13,7 @@ app = FastAPI(title="Portfolio")
 def home():
     return f"""
     <html>
+      <h1>NOVA APPS</h1>
       <head><title>Portfolio ({APP_ENV})</title></head>
       <body style="font-family: sans-serif; max-width: 640px; margin: 40px auto;">
         <h1>Meu portfólio</h1>
