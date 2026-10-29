@@ -1,0 +1,10 @@
+# Ambiente DEV (no seu Mac)
+# Uso: docker compose up --build
+services:
+  web:
+    build: ./app
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: dev
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
